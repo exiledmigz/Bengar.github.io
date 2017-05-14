@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Order Form -Bengar Industrial Corporation-</title>
+<link rel="icon" type="image/ico" href="images/bengaricon.ico" />
+<style>
+
+#Main ul {list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #000052;	 
+	font-family: Berlin Sans FB;}
+
+#Main li {float: left;}
+
+#Main li a {display: block;
+    color: white;
+    text-align: center;
+    padding: 16.5px 16px;
+    text-decoration: none}
+
+#Main li a:hover:not(.active) {background-color: #111;}
+
+#Main .active {background-color: #3F4C6B;}
+	
+#bengar{background-image: url("bengar-industrial_logo_thumbnail_new.png");}
+	
+#Main{position:fixed;
+	width: 100%;}
+	
+.UGH{
+text-align:center;
+font-weight:bold;
+font-size:32px;
+font-family:Helvetica;
+}
+body{
+  padding:0;
+  margin:0;
+}
+
+</style>
+</head>
+<body>
+	<div id="Main">	
+		<img src="bengar-industrial_logo_thumbnail_new1.png" id="logo" style="float:left;"/>
+		<ul>
+		  <li style="float:right"><a href="Orderform.html">ORDER FORM</a></li>
+		  <li style="float:right"><a class="active" href="AdminHome.html">HOME</a></li>
+		</ul>
+	</div>
+<br/><br/>
+<p class="UGH"> Sales Order Form </p>
+
+	<form action="Sample.jsp">  
+	<div style= "width: 50%; float: left;">
+		Customer:    <input type="text" name="Customer"> <br/><br/>
+		Address:     <input type="text" name="Address"> <br/><br/>
+		Deliver to:  <input type="text" name="Deliver"> <br/><br/>
+		Contact No.: <input type="number" name="Contact"> <br/><br/> 
+	</div>
+	
+	<div style= "width: 50%; float: right;">
+		Date:        <input type="date" name="Date"> <br/><br/>
+		Invoice No:  <input type="number" name="Invoice"><br/><br/>
+		P.R. No.:    <input type="number" name="PR"><br/><br/>
+		P.O. No.:    <input type="number" name="PO"><br/><br/>
+		Terms:       <input type="text" name="Terms"><br/><br/>
+	</div>
+	
+	<div>
+		<table>
+			<tr>
+				<th style= "width: 5%">QTY</th>
+				<th style= "width: 5%">UNIT</th>
+				<th style= "width: 10%">CATEGORY</th>
+				<th style= "width: 20%">ARTICLES</th>
+				<th style= "width: 10%">UNIT PRICE</th>
+				<th style= "width: 10%">AMOUNT</th>
+			</tr>
+			<tr>
+				<td><input type="text" style="width: 75px; height:100px" name="qty1"> </td>
+				<td><input type="text" style="width: 75px; height:100px" name="unit1"> </td>
+				<td><input type="text" style="width: 155px; height:100px" name="category1"> </td>
+				<td><textarea style="width: 500px; height:100px" name="articles1"> </textarea></td>
+				<td><input type="text" style="width: 200px; height:100px" name="unitprice1"> </td>
+				<td><input type="text" style="width: 150px; height:100px" name="amount1"> </td>
+			</tr>
+	<!--  		<tr> 
+				<td><input type="text" style="width: 75px; height:100px" name="qty2"> </td>
+				<td><input type="text" style="width: 75px; height:100px" name="unit2"> </td>
+				<td><input type="text" style="width: 155px; height:100px" name="category2"> </td>
+				<td><textarea style="width: 500px; height:100px" name="articles2"> </textarea></td>
+				<td><input type="text" style="width: 200px; height:100px" name="unitprice2"> </td>
+				<td><input type="text" style="width: 150px; height:100px" name="amount2"> </td>
+			</tr>
+			<tr>
+				<td><input type="text" style="width: 75px; height:100px" name="qty3"> </td>
+				<td><input type="text" style="width: 75px; height:100px" name="unit3"> </td>
+				<td><input type="text" style="width: 155px; height:100px" name="category3"> </td>
+				<td><textarea style="width: 500px; height:100px" name="articles3"> </textarea></td>
+				<td><input type="text" style="width: 200px; height:100px" name="unitprice3"> </td>
+				<td><input type="text" style="width: 150px; height:100px" name="amount3"> </td>
+			</tr>
+			<tr>
+				<td><input type="text" style="width: 75px; height:100px" name="qty4"> </td>
+				<td><input type="text" style="width: 75px; height:100px" name="unit4"> </td>
+				<td><input type="text" style="width: 155px; height:100px" name="category4"> </td>
+				<td><textarea style="width: 500px; height:100px" name="articles4"> </textarea></td>
+				<td><input type="text" style="width: 200px; height:100px" name="unitprice4"> </td>
+				<td><input type="text" style="width: 150px; height:100px" name="amount4"> </td>
+			</tr>
+			<tr>
+				<td><input type="text" style="width: 75px; height:100px" name="qty5"> </td>
+				<td><input type="text" style="width: 75px; height:100px" name="unit5"> </td>
+				<td><input type="text" style="width: 155px; height:100px" name="category5"> </td>
+				<td><textarea style="width: 500px; height:100px" name="articles5"> </textarea></td>
+				<td><input type="text" style="width: 200px; height:100px" name="unitprice5"> </td>
+				<td><input type="text" style="width: 150px; height:100px" name="amount5"> </td>
+			</tr> -->
+		</table>
+		<input type="submit" value="Submit"><br/> 
+	</div>
+		
+	</form>
+</body>
+</html>
+

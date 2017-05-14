@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Guest Login -Bengar Industrial Corporation-</title>
+<link rel="icon" type="image/ico" href="images/bengaricon.ico" />
+<style>
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #000052;
+	font-family: Berlin Sans FB;
+}
+
+li {
+	float: left;
+}
+
+li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 16.5px 16px;
+	text-decoration: none
+}
+
+li a:hover:not (.active ) {
+	background-color: #111;
+}
+
+.active {
+	background-color: #3F4C6B;
+}
+
+#logo {
+	float: left;
+}
+
+#Main {
+	position: fixed;
+	width: 100%;
+}
+
+body {
+	padding: 0;
+	margin: 0;
+}
+
+.vid-container {
+	position: relative;
+	height: 100vh;
+	overflow: hidden;
+}
+
+.bgvid {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100vw;
+}
+
+.inner-container {
+	width: 400px;
+	height: 400px;
+	position: absolute;
+	top: calc(50vh - 200px);
+	left: calc(50vw - 200px);
+	overflow: hidden;
+}
+
+.bgvid.inner {
+	top: calc(-50vh + 200px);
+	left: calc(-50vw + 200px);
+	filter:
+		url("data:image/svg+xml;utf9,<svg%20version='1.1'%20xmlns='http://www.w3.org/2000/svg'><filter%20id='blur'><feGaussianBlur%20stdDeviation='10'%20/></filter></svg>#blur");
+	-webkit-filter: blur(10px);
+	-ms-filter: blur(10px);
+	-o-filter: blur(10px);
+	filter: blur(10px);
+}
+
+.box {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	font-family: Helvetica;
+	color: #fff;
+	background: rgba(0, 0, 0, 0.13);
+	padding: 30px 0px;
+}
+
+.box h1 {
+	text-align: center;
+	margin: 30px 0;
+	font-size: 30px;
+}
+
+.box input {
+	display: block;
+	width: 300px;
+	margin: 20px auto;
+	padding: 15px;
+	background: rgba(0, 0, 0, 0.2);
+	color: #fff;
+	border: 0;
+}
+
+.box input:focus, .box input:active, .box button:focus, .box button:active
+	{
+	outline: none;
+}
+
+.box button {
+	background: #000052;
+	border: 0;
+	color: #fff;
+	padding: 10px;
+	font-size: 20px;
+	width: 330px;
+	margin: 20px auto;
+	display: block;
+	cursor: pointer;
+}
+
+.box button:active {
+	background: #27ae60;
+}
+
+.box p {
+	font-size: 14px;
+	text-align: center;
+}
+
+.box p span {
+	cursor: pointer;
+	color: #666;
+}
+</style>
+</head>
+<div class="vid-container">
+	<video class="bgvid" autoplay="autoplay" muted="muted" preload="auto"
+		loop>
+		<source src="WelcomeVideo.mp4" type="video/mp4">
+	</video>
+	<div class="inner-container">
+		<video class="bgvid inner" autoplay="autoplay" muted="muted"
+			preload="auto" loop>
+			<source src="WelcomeVideo.mp4" type="video/mp4">
+		</video>
+		<div class="box">
+		<form method="post" action="AdminHome.html">
+			<h1>Welcome to Bengar Industrial Corporation</h1>
+			<input type="text" placeholder="Username" name="user"/> 
+			<input type="password" placeholder="Password" name="pass"/>
+			<button type="submit">Enter</button>
+			</form>
+
+		</div>
+	</div>
+</div>
+</body>
+</html>
